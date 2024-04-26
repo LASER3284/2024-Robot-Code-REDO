@@ -35,10 +35,10 @@ import edu.wpi.first.wpilibj.smartdashboard.Field2d;
  * <p>It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
+
 public final class Constants {
 
   public static final class SwerveConstants {
-
     public static final double DRIVE_RATIO = 6.12;
     public static final double WHEEL_DIAM = 3.824;
     public static final double WHEEL_CIRC = WHEEL_DIAM * Math.PI;
@@ -46,9 +46,50 @@ public final class Constants {
     public static final double MAX_ROBOT_ACCEL = 24.0;
     public static final int DRIVE_ENC_RES = 2048;
     public static final double TURN_RATIO = 12.8;
+    
   }
 
   public static final class DriveConstants {
-    public static final frc.Translation2d FRONT_LEFT_LOCATION {11.25, 11.25};
+    
+    public static final Translation2d FRONT_LEFT_LOCATION = new Translation2d(11.25, 11.25);
+    public static final Translation2d FRONT_RIGHT_LOCATION = new Translation2d(11.25, -11.25);
+    public static final Translation2d BACK_LEFT_LOCATION = new Translation2d(-11.25, 11.25);
+    public static final Translation2d BACK_RIGHT_LOCATION = new Translation2d(-11.25, -11.25);
+
+    public static final double MAX_SPEED = 18;
+    public static final double MAX_AUTO_SPEED = 1;
+    public static final double MAX_ROT_SPEED = 720;
+  }
+
+  public static final class TurretConstants {
+
+  }
+
+  public static final class PivotConstants {
+
+  }
+
+  public static final class FlywheelConstants {
+
+  }
+
+  public static final class ArmConstants {
+
+  }
+
+  public static final class ExtensionConstants {
+
+  }
+
+  public static final class RollerConstants {
+
+  }
+
+  public static final class ShoulderConstants {
+
+  }
+
+  public static final class IntakeConstants {
+
   }
 }
