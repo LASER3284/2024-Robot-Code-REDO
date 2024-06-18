@@ -8,7 +8,6 @@ package frc.robot;
 //import com.ctre.phoenix6.signals.GravityTypeValue;
 //import com.ctre.phoenix6.signals.InvertedValue;
 //import com.ctre.phoenix6.signals.NeutralModeValue;
-import com.fasterxml.jackson.databind.ser.std.StdKeySerializers.Default;
 //import com.pathplanner.lib.controllers.PPHolonomicDriveController;
 //import com.pathplanner.lib.path.PathConstraints;
 //import com.pathplanner.lib.util.HolonomicPathFollowerConfig;
@@ -27,6 +26,8 @@ import edu.wpi.first.math.numbers.N3;
 import edu.wpi.first.math.util.Units;
 import edu.wpi.first.wpilibj.DriverStation.Alliance;
 import edu.wpi.first.wpilibj.smartdashboard.Field2d;
+
+import edu.wpi.first.units.Units.*;
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -62,11 +63,13 @@ public final class Constants {
   }
 
   public static final class TurretConstants {
-
+    public static final boolean DIRECTION = true;
+    public static final double TOLERANCE = 2.5;
   }
 
   public static final class PivotConstants {
-
+    public static final boolean DIRECTION = false;
+    public static final double TOLERANCE = 1.0;
   }
 
   public static final class FlywheelConstants {
